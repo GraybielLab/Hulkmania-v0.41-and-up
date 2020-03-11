@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\x86</OutputPath>
+    <BaseIntermediateOutputPath>..\obj\Debug\x86\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\x86</OutputPath>
+    <BaseIntermediateOutputPath>..\obj\Release\x86\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\x64</OutputPath>
+    <BaseIntermediateOutputPath>..\obj\Debug\x64\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\x64</OutputPath>
+    <BaseIntermediateOutputPath>..\obj\Release\x64\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Brandeis.AGSOL.Hulkamania.AppMain</StartupObject>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ProjectGuid>{07592634-5109-4D3B-9D6D-F51124980B68}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hulk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Brandeis.AGSOL.Hulkamania</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppMain.cs" />
+    <Compile Include="AudioChannel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AudioPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorSchemeHulkController.cs" />
+    <Compile Include="ControlInput.cs" />
+    <Compile Include="ControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorSchemeDummyController.cs" />
+    <Compile Include="ColorScheme.cs" />
+    <Compile Include="DataController.cs" />
+    <Compile Include="DataControllerDummy.cs" />
+    <Compile Include="DataControllerHulk.cs" />
+    <Compile Include="DataLogger.cs" />
+    <Compile Include="DirectSoundWrapper.cs" />
+    <Compile Include="DisplayableData.cs" />
+    <Compile Include="FlickerFreeListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HorizontalAxisGraph.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Hulk.cs" />
+    <Compile Include="HulkTask.cs" />
+    <Compile Include="HulkTaskPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputController.cs" />
+    <Compile Include="JoystickGraph.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoggingPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogHandler.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotionCommand.cs" />
+    <Compile Include="MotionController.cs" />
+    <Compile Include="MotionControllerDummy.cs" />
+    <Compile Include="MotionControllerHulk.cs" />
+    <Compile Include="NamedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RotationAngles.cs" />
+    <Compile Include="SendReconnectCommandToNetworkClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundFactory.cs" />
+    <Compile Include="SoundPlayer.cs" />
+    <Compile Include="StatusPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusTransmitterMars.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hulk.ico" />
+    <Content Include="PostBuildEvent.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Brandeis.AGSOL.FlexMotion">
+      <HintPath>..\lib\Brandeis.AGSOL.FlexMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="Brandeis.AGSOL.Network">
+      <HintPath>C:\ASP\Work_folder\Hulkamania.v0.41.and.up.huginn.clone\Hulkamania\lib\Brandeis.AGSOL.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Iridium">
+      <HintPath>..\lib\MathNet.Iridium.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common">
+      <HintPath>..\lib\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.DAQmx">
+      <HintPath>..\lib\NationalInstruments.DAQmx.dll</HintPath>
+    </Reference>
+    <Reference Include="slimdx - x64, Version=2.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=AMD64">
+      <HintPath>..\lib\x64\slimdx.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="slimdx - x86, Version=2.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+      <HintPath>..\lib\x86\slimdx.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cmd /c copy /y "$(ProjectDir)..\resources\hulk.ico" "$(TargetDir)"
+cmd /c copy /y "$(ProjectDir)..\resources\logging.config" "$(TargetDir)"
+cmd /c copy /y "$(ProjectDir)..\lib\$(Platform)\slimdx.dll" "$(TargetDir)"
+rd "$(ProjectDir)obj" /S /Q
+xcopy "$(ProjectDir)..\resources\Images" "$(TargetDir)\Images" /Y /I /E 	
+xcopy "$(ProjectDir)..\resources\TrialAudio" "$(TargetDir)\TrialAudio" /Y /I /E 	
+xcopy "$(ProjectDir)..\resources\AudioPanel" "$(TargetDir)\AudioPanel" /Y /I /E 	</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

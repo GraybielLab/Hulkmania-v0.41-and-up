@@ -1,0 +1,7 @@
+cmd /c copy /y "$(ProjectDir)..\resources\hulk.ico" "$(TargetDir)"
+cmd /c copy /y "$(ProjectDir)..\resources\logging.config" "$(TargetDir)"
+cmd /c copy /y "$(ProjectDir)..\lib\$(PlatformName)\slimdx.dll" "$(TargetDir)"
+rd "$(ProjectDir)obj" /S /Q
+xcopy "$(ProjectDir)..\resources\Images" "$(TargetDir)\Images" /Y /I /E 	
+xcopy "$(ProjectDir)..\resources\TrialAudio" "$(TargetDir)\TrialAudio" /Y /I /E 	
+xcopy "$(ProjectDir)..\resources\AudioPanel" "$(TargetDir)\AudioPanel" /Y /I /E 	

@@ -1,0 +1,4 @@
+;TrialNumber,Condition,DOBRoll,DOBPitch,DOBYaw,AccelConstant,MaxAcceleration,MaxVelocity,MaxAngle,RestartWhenMaxAngle,RestartDOBOffsetMinYaw,RestartDOBOffsetMaxYAw,RestartDOBOffsetMinPitch,RestartDOBOffsetMaxPitch,RestartDOBOffsetMinRoll,RestartDOBOffsetMaxRoll,TimeLimit,JoystickIndicationsMandatory,JoystickGain,JoystickControl,NoiseProfile,NoiseAmplitude,UseRoll,UsePitch,UseYaw,BeginAtRoll,BeginAtPitch,BeginAtYaw,VisualRollOffset,VisualPitchOffset,VisualYawOffset,MoveSound,TrialStartSound,TrialEndSound,ResetStartSound,ResetEndSound,ReminderSound,Analyze
+1,1,0,0,0,350,300,180,90,TRUE,0,0,0,0,5,10,45,FALSE,12,NORMAL,,0,TRUE,FALSE,FALSE,,,,0,0,0,,,,,,,FALSE
+3,1,30,0,0,350,300,180,90,TRUE,0,0,0,0,5,10,45,TRUE,12,NORMAL,,0,TRUE,FALSE,FALSE,,,,0,0,0,,,,,,,TRUE
+4,1,-30,0,0,350,300,180,90,TRUE,0,0,0,0,5,10,45,TRUE,12,NORMAL,,0,TRUE,FALSE,FALSE,,,,0,0,0,,,,,,,TRUE

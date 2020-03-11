@@ -1,0 +1,12 @@
+;TrialNumber,JoystickGain,AccelConstant,MaxAngle,RestartWhenMaxAngle,TimeLimit,UseRoll,UsePitch,UseYaw,DOBRoll,DOBPitch,DOBYaw,InitialAction,StartRoll,StartPitch,StartYaw,VisualRoll,VisualPitch,VisualYaw,MoveSound,TrialStartSound,TrialEndSound,ResetStartSound,ResetEndSound
+1,0,600,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,begin.wav,None,None,control-lost.wav,begin.wav
+2,0,610,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+3,0,620,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+4,0,630,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+5,0,640,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+6,0,650,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+7,0,660,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+8,0,670,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+9,0,680,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+10,0,690,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
+11,0,700,60,FALSE,45,TRUE,FALSE,FALSE,0,0,0,START,5,0,0,0,0,0,None,None,None,control-lost.wav,begin.wav
